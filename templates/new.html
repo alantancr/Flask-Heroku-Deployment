@@ -1,0 +1,97 @@
+{% extends "layout.html" %}
+{% block title %}  {% endblock %}
+{% block head %} {{ super() }} {% endblock %}
+{% block body %}
+
+<html>
+
+   <body>
+     <br><br><br>
+
+    <h2><div align="center"><b>Hotel Pal</b></div>  </h2>
+
+     <br>
+
+    
+      <form action = "/result" method = "POST" form name="myForm">
+        <div align="center">
+          <label for="hotel">I love this hotel:</label>
+
+            <input list="hotel" name="hotel" required>
+            <datalist id="hotel">
+              <option value="The Belgrave Hotel">London</option>
+              <option value="Park Plaza Victoria London">London</option>
+              <option value="Vienna Marriott Hotel">Vienna</option>
+              <option value="AZIMUT Hotel Vienna">Vienna</option>
+        
+              <option value="Villa Opera Drouot">Paris</option>
+              <option value="A La Villa Madame">Paris</option>
+              <option value="Amadi Park Hotel">Amsterdam</option>
+              <option value="Waldorf Astoria Amsterdam">Amsterdam</option>
+              <option value="Gallery Hotel">Barcelona</option>
+              <option value="Hotel Balmes">Barcelona</option>
+              
+            </datalist>
+            <label for="city">Find me something similar in:</label>
+
+            <input list="city" name="city" required>
+            <datalist id="city">
+              <option value="Paris">
+                <option value="London">
+                <option value="Barcelona">
+                <option value="Vienna">
+                  <option value="Amsterdam">
+            </datalist>
+            <input type="radio" name="options" id="tags" value="tags" required> By Features </input>
+            <input type="radio" name="options" id="reviews" value="reviews" required> By Reviews </input>
+            <input type = "submit" value = "Search" class="btn btn-secondary"/>
+
+
+        </div>
+      </form>
+      <div class="text-center">
+        <div id="demo" class="carousel slide" data-ride="carousel" data-interval="6000">
+  <br>
+          <!-- Indicators -->
+          <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+          </ul>
+        
+          <!-- The slideshow -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="static/image1_5.jpg" alt="Travel 2020">
+            </div>
+            <div class="carousel-item">
+              <img src="static/image2_2.jpg"  alt="Adventure">
+            </div>
+            <div class="carousel-item">
+              <img src="static/image3_1.jpg"  alt="Scenic">
+            </div>
+          </div>
+        
+          <!-- Left and right controls -->
+          <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        
+        </div>
+      </div>
+    <!-- <div class="text-center">
+        <img src="static/home.png"class="img-fluid" alt="Responsive image">
+      </div> -->
+      
+        
+      </div>
+    </p>
+     <footer class="text-center">Best View in Google Chrome</footer>
+   </body>
+</html>
+
+
+{%endblock%}

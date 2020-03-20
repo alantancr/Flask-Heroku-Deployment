@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_57793c9bdacb4d568833e832fb7f57f3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <link rel="stylesheet" href="https://rawcdn.githack.com/marslan390/BeautifyMarker/master/leaflet-beautify-marker-icon.css"/>
+    <script src="https://rawcdn.githack.com/marslan390/BeautifyMarker/master/leaflet-beautify-marker-icon.js"></script>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_57793c9bdacb4d568833e832fb7f57f3" ></div>
+        
+</body>
+<script>    
+    
+            var map_57793c9bdacb4d568833e832fb7f57f3 = L.map(
+                "map_57793c9bdacb4d568833e832fb7f57f3",
+                {
+                    center: [51.5073219, -0.1276474],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4c15f60ca6de47df886f13b9aaac4efc = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_57793c9bdacb4d568833e832fb7f57f3);
+        
+    
+            var tile_layer_fd9fd0c95c0d445690fb147b2add7e8f = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_57793c9bdacb4d568833e832fb7f57f3);
+        
+    
+            var marker_64c72d64a2b2415392b6d1c30e46524f = L.marker(
+                [51.4901051, -0.1381355],
+                {}
+            ).addTo(map_57793c9bdacb4d568833e832fb7f57f3);
+        
+    
+            var beautify_icon_370bbb8ce1b1430d8084b5ce67e806cd = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 0.5, "icon": "bus", "innerIconStyle": "margin-top:0px;", "isAlphaNumericIcon": true, "spin": false, "text": 1, "textColor": "red"}
+            )
+            marker_64c72d64a2b2415392b6d1c30e46524f.setIcon(beautify_icon_370bbb8ce1b1430d8084b5ce67e806cd);
+        
+    
+        var popup_18b44ea622044045925f770e4ddfa0f5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_602ad460e62f44beb63c96cd3f83c9bc = $(`<div id="html_602ad460e62f44beb63c96cd3f83c9bc" style="width: 100.0%; height: 100.0%;">The Belgrave Hotel</div>`)[0];
+            popup_18b44ea622044045925f770e4ddfa0f5.setContent(html_602ad460e62f44beb63c96cd3f83c9bc);
+        
+
+        marker_64c72d64a2b2415392b6d1c30e46524f.bindPopup(popup_18b44ea622044045925f770e4ddfa0f5)
+        ;
+
+        
+    
+    
+            marker_64c72d64a2b2415392b6d1c30e46524f.bindTooltip(
+                `<div>
+                     The Belgrave Hotel
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_27aff654b8aa47ad92da129447a649c7 = L.marker(
+                [51.5207945, -0.1310845],
+                {}
+            ).addTo(map_57793c9bdacb4d568833e832fb7f57f3);
+        
+    
+            var beautify_icon_f7dff498af7742c691de5891c63daca0 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 0.5, "icon": "bus", "innerIconStyle": "margin-top:0px;", "isAlphaNumericIcon": true, "spin": false, "text": 2, "textColor": "red"}
+            )
+            marker_27aff654b8aa47ad92da129447a649c7.setIcon(beautify_icon_f7dff498af7742c691de5891c63daca0);
+        
+    
+        var popup_b2e04c59406f4b0da35ea48c07e464cb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cc0223e6ceab46b6bfdc3b4c2bb13c12 = $(`<div id="html_cc0223e6ceab46b6bfdc3b4c2bb13c12" style="width: 100.0%; height: 100.0%;">Bloomsbury Palace Hotel</div>`)[0];
+            popup_b2e04c59406f4b0da35ea48c07e464cb.setContent(html_cc0223e6ceab46b6bfdc3b4c2bb13c12);
+        
+
+        marker_27aff654b8aa47ad92da129447a649c7.bindPopup(popup_b2e04c59406f4b0da35ea48c07e464cb)
+        ;
+
+        
+    
+    
+            marker_27aff654b8aa47ad92da129447a649c7.bindTooltip(
+                `<div>
+                     Bloomsbury Palace Hotel
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9f9561c034f5464fac3a999dc3aba14d = L.marker(
+                [51.494431899999995, -0.1363756],
+                {}
+            ).addTo(map_57793c9bdacb4d568833e832fb7f57f3);
+        
+    
+            var beautify_icon_400ad50046fa429bb6939658b8c72770 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 0.5, "icon": "bus", "innerIconStyle": "margin-top:0px;", "isAlphaNumericIcon": true, "spin": false, "text": 3, "textColor": "red"}
+            )
+            marker_9f9561c034f5464fac3a999dc3aba14d.setIcon(beautify_icon_400ad50046fa429bb6939658b8c72770);
+        
+    
+        var popup_f77d96e0be494e5db49a0f3f16ab8924 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e98c9b9edb7e4846a151d6eb25f48c74 = $(`<div id="html_e98c9b9edb7e4846a151d6eb25f48c74" style="width: 100.0%; height: 100.0%;">Grange Wellington Hotel</div>`)[0];
+            popup_f77d96e0be494e5db49a0f3f16ab8924.setContent(html_e98c9b9edb7e4846a151d6eb25f48c74);
+        
+
+        marker_9f9561c034f5464fac3a999dc3aba14d.bindPopup(popup_f77d96e0be494e5db49a0f3f16ab8924)
+        ;
+
+        
+    
+    
+            marker_9f9561c034f5464fac3a999dc3aba14d.bindTooltip(
+                `<div>
+                     Grange Wellington Hotel
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4fc4a2009d044b8eab65ca8f9805d0d9 = L.marker(
+                [51.494265399999996, -0.13660260000000002],
+                {}
+            ).addTo(map_57793c9bdacb4d568833e832fb7f57f3);
+        
+    
+            var beautify_icon_2b79c0880a1f4998830e0c9d2940c0a9 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 0.5, "icon": "bus", "innerIconStyle": "margin-top:0px;", "isAlphaNumericIcon": true, "spin": false, "text": 4, "textColor": "red"}
+            )
+            marker_4fc4a2009d044b8eab65ca8f9805d0d9.setIcon(beautify_icon_2b79c0880a1f4998830e0c9d2940c0a9);
+        
+    
+        var popup_7213e9ae827c43a0a2bf974e92dbe7bc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a4a41032bb5241aa9a57959d9eeea18d = $(`<div id="html_a4a41032bb5241aa9a57959d9eeea18d" style="width: 100.0%; height: 100.0%;">Grange Rochester Hotel</div>`)[0];
+            popup_7213e9ae827c43a0a2bf974e92dbe7bc.setContent(html_a4a41032bb5241aa9a57959d9eeea18d);
+        
+
+        marker_4fc4a2009d044b8eab65ca8f9805d0d9.bindPopup(popup_7213e9ae827c43a0a2bf974e92dbe7bc)
+        ;
+
+        
+    
+    
+            marker_4fc4a2009d044b8eab65ca8f9805d0d9.bindTooltip(
+                `<div>
+                     Grange Rochester Hotel
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b8c8ac618bdb4d78a3f08866dab9e209 = L.marker(
+                [51.507745899999996, -0.1378733],
+                {}
+            ).addTo(map_57793c9bdacb4d568833e832fb7f57f3);
+        
+    
+            var beautify_icon_e936354dcfe74b8184c6d0c709ae6e10 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 0.5, "icon": "bus", "innerIconStyle": "margin-top:0px;", "isAlphaNumericIcon": true, "spin": false, "text": 5, "textColor": "red"}
+            )
+            marker_b8c8ac618bdb4d78a3f08866dab9e209.setIcon(beautify_icon_e936354dcfe74b8184c6d0c709ae6e10);
+        
+    
+        var popup_b6d7d562883349e49b3b885126e7fc58 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a613931768e7485fb5c81d0b83d528ed = $(`<div id="html_a613931768e7485fb5c81d0b83d528ed" style="width: 100.0%; height: 100.0%;">The Cavendish London</div>`)[0];
+            popup_b6d7d562883349e49b3b885126e7fc58.setContent(html_a613931768e7485fb5c81d0b83d528ed);
+        
+
+        marker_b8c8ac618bdb4d78a3f08866dab9e209.bindPopup(popup_b6d7d562883349e49b3b885126e7fc58)
+        ;
+
+        
+    
+    
+            marker_b8c8ac618bdb4d78a3f08866dab9e209.bindTooltip(
+                `<div>
+                     The Cavendish London
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7e5df08843f44ddea2955ab00f982f57 = L.marker(
+                [51.5139315, -0.12198930000000001],
+                {}
+            ).addTo(map_57793c9bdacb4d568833e832fb7f57f3);
+        
+    
+            var beautify_icon_0fb99741f9f14ee6a8c461f224b99f2c = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 0.5, "icon": "bus", "innerIconStyle": "margin-top:0px;", "isAlphaNumericIcon": true, "spin": false, "text": 6, "textColor": "red"}
+            )
+            marker_7e5df08843f44ddea2955ab00f982f57.setIcon(beautify_icon_0fb99741f9f14ee6a8c461f224b99f2c);
+        
+    
+        var popup_13af6fe95f5b4e35b449c4eee6d9e3b3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_02cde35a8f654846ac4ea038b8f621f2 = $(`<div id="html_02cde35a8f654846ac4ea038b8f621f2" style="width: 100.0%; height: 100.0%;">Fielding Hotel</div>`)[0];
+            popup_13af6fe95f5b4e35b449c4eee6d9e3b3.setContent(html_02cde35a8f654846ac4ea038b8f621f2);
+        
+
+        marker_7e5df08843f44ddea2955ab00f982f57.bindPopup(popup_13af6fe95f5b4e35b449c4eee6d9e3b3)
+        ;
+
+        
+    
+    
+            marker_7e5df08843f44ddea2955ab00f982f57.bindTooltip(
+                `<div>
+                     Fielding Hotel
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0b0ecd6c91b0457e80bc258e9c1285c3 = L.marker(
+                [51.522052200000005, -0.132414],
+                {}
+            ).addTo(map_57793c9bdacb4d568833e832fb7f57f3);
+        
+    
+            var beautify_icon_11f0b54280f244d3a9dff1acb1775552 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 0.5, "icon": "bus", "innerIconStyle": "margin-top:0px;", "isAlphaNumericIcon": true, "spin": false, "text": 7, "textColor": "red"}
+            )
+            marker_0b0ecd6c91b0457e80bc258e9c1285c3.setIcon(beautify_icon_11f0b54280f244d3a9dff1acb1775552);
+        
+    
+        var popup_6388240131f24c7aaca813238129aa47 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3d48fc16160846708774a3a7b9f4a9ff = $(`<div id="html_3d48fc16160846708774a3a7b9f4a9ff" style="width: 100.0%; height: 100.0%;">Hotel Cavendish</div>`)[0];
+            popup_6388240131f24c7aaca813238129aa47.setContent(html_3d48fc16160846708774a3a7b9f4a9ff);
+        
+
+        marker_0b0ecd6c91b0457e80bc258e9c1285c3.bindPopup(popup_6388240131f24c7aaca813238129aa47)
+        ;
+
+        
+    
+    
+            marker_0b0ecd6c91b0457e80bc258e9c1285c3.bindTooltip(
+                `<div>
+                     Hotel Cavendish
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5e7ace93d0b143318dbeaf8ccf0577ea = L.marker(
+                [51.51969129999999, -0.1254243],
+                {}
+            ).addTo(map_57793c9bdacb4d568833e832fb7f57f3);
+        
+    
+            var beautify_icon_8fb0c8f1484845abac14fb7eba827c40 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 0.5, "icon": "bus", "innerIconStyle": "margin-top:0px;", "isAlphaNumericIcon": true, "spin": false, "text": 8, "textColor": "red"}
+            )
+            marker_5e7ace93d0b143318dbeaf8ccf0577ea.setIcon(beautify_icon_8fb0c8f1484845abac14fb7eba827c40);
+        
+    
+        var popup_87e1ac3194b14466b9fd5de488d0395d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_23153c1c0a2d474fb5b7af46963db85e = $(`<div id="html_23153c1c0a2d474fb5b7af46963db85e" style="width: 100.0%; height: 100.0%;">Grange Blooms Hotel</div>`)[0];
+            popup_87e1ac3194b14466b9fd5de488d0395d.setContent(html_23153c1c0a2d474fb5b7af46963db85e);
+        
+
+        marker_5e7ace93d0b143318dbeaf8ccf0577ea.bindPopup(popup_87e1ac3194b14466b9fd5de488d0395d)
+        ;
+
+        
+    
+    
+            marker_5e7ace93d0b143318dbeaf8ccf0577ea.bindTooltip(
+                `<div>
+                     Grange Blooms Hotel
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eadaf5748b9743f095ab0da734dbbeeb = L.marker(
+                [51.5266618, -0.12965710000000003],
+                {}
+            ).addTo(map_57793c9bdacb4d568833e832fb7f57f3);
+        
+    
+            var beautify_icon_ef5fc77b88b245bf8abbe3bae689ef54 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 0.5, "icon": "bus", "innerIconStyle": "margin-top:0px;", "isAlphaNumericIcon": true, "spin": false, "text": 9, "textColor": "red"}
+            )
+            marker_eadaf5748b9743f095ab0da734dbbeeb.setIcon(beautify_icon_ef5fc77b88b245bf8abbe3bae689ef54);
+        
+    
+        var popup_5960a129596e480786c6d72dd98ff7f5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3e0b69db69564d6c8687ffe692d4a31b = $(`<div id="html_3e0b69db69564d6c8687ffe692d4a31b" style="width: 100.0%; height: 100.0%;">Ambassadors Bloomsbury</div>`)[0];
+            popup_5960a129596e480786c6d72dd98ff7f5.setContent(html_3e0b69db69564d6c8687ffe692d4a31b);
+        
+
+        marker_eadaf5748b9743f095ab0da734dbbeeb.bindPopup(popup_5960a129596e480786c6d72dd98ff7f5)
+        ;
+
+        
+    
+    
+            marker_eadaf5748b9743f095ab0da734dbbeeb.bindTooltip(
+                `<div>
+                     Ambassadors Bloomsbury
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b37eacab6e124b178982c3c74e12f28c = L.marker(
+                [51.506935, -0.12601199999999999],
+                {}
+            ).addTo(map_57793c9bdacb4d568833e832fb7f57f3);
+        
+    
+            var beautify_icon_e58da410fae44574b61aeba0fbb994ca = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 0.5, "icon": "bus", "innerIconStyle": "margin-top:0px;", "isAlphaNumericIcon": true, "spin": false, "text": 10, "textColor": "red"}
+            )
+            marker_b37eacab6e124b178982c3c74e12f28c.setIcon(beautify_icon_e58da410fae44574b61aeba0fbb994ca);
+        
+    
+        var popup_2ad14ff7153b4f6aa1b235c6e9ac471c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_545a9d09788d4fb7a85aa570a6918697 = $(`<div id="html_545a9d09788d4fb7a85aa570a6918697" style="width: 100.0%; height: 100.0%;">The Grand at Trafalgar Square</div>`)[0];
+            popup_2ad14ff7153b4f6aa1b235c6e9ac471c.setContent(html_545a9d09788d4fb7a85aa570a6918697);
+        
+
+        marker_b37eacab6e124b178982c3c74e12f28c.bindPopup(popup_2ad14ff7153b4f6aa1b235c6e9ac471c)
+        ;
+
+        
+    
+    
+            marker_b37eacab6e124b178982c3c74e12f28c.bindTooltip(
+                `<div>
+                     The Grand at Trafalgar Square
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
